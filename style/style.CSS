@@ -1,0 +1,632 @@
+@font-face {
+    font-family: 'Mulish', Tahoma ;
+    src: url(../font/Mulish-Variable.ttf), format('truetype');
+    font-weight: medium;
+}
+
+:root{
+    --cor1:#000000;
+    --cor2:#2C3326;
+    --cor3:#0f0f0f;
+    --cor4:#8C8C8C;
+    --cor5:#4D4D4D;
+    --cor6:rgb(255, 255, 255);
+    --cor7:rgb(2, 197, 2);
+    --cor8:rgb(5, 82, 5);
+    --corcatalogo: #060e16;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Mulish";
+    font-size: 1em;
+    box-sizing: border-box;
+}
+body,html {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #000000;
+}
+/* Inicio do cabecalho*/
+header.cabecalho  {
+    background-color: var(--cor1);
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    position: sticky;
+    overflow: hidden;
+    top: 0px;
+    z-index: 3;
+}
+div.logo img{
+    width: 200px;
+    height: auto;
+    background-position: top right;
+    padding: 30px 30px;
+    float: left;
+    margin: 0px 35px 0px 0px;
+}
+
+#botoes a{
+    float: left;
+    color: white;
+    margin: 25px 15px;
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+}
+#botoes a:hover {
+    background-color: red;
+    color: white;
+}
+#search input{
+    width: 250px;
+    margin: 25px 15px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2C3326;
+    color: white;
+    float: left;
+}
+
+#login input[type=button]{
+    width: 200px;
+    margin: 25px 50px 25px 10px;
+    padding: 10px;
+    height: 40px;
+    border: none;
+    background-color: var(--cor7);
+    color: white;
+    float: right;
+}
+#login input[type=button]:hover {
+    background-color: var(--cor8);
+}
+
+
+/*Inicio do conteudo*/
+.Fundo img{
+    background-color: var(--cor1);
+    margin-top: -80px;
+    margin-bottom: -80px;
+    position: center;
+    display: block;
+    width: 100%;
+}
+.conteudopag{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    background-color: var(--cor1);
+}
+.conteudo{
+    text-align: justify;
+    padding: 5px;
+    color: var(--cor6);
+}
+
+.box{
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+/*Inicio rodape*/
+
+footer{
+    width: 100vw;
+    background-color: var(--cor3);
+    position: bottom right;
+    display: inline-block;
+}
+#secaorodape{
+   width: 80vw;
+   height: auto;
+   margin: auto;
+   display: block;
+}
+.rodape{
+    float: left;
+    color: white;
+    width: 33,3%;
+    padding: 20px;
+    margin: 25px;
+}
+.rodape ul {
+    list-style: none;
+    line-height: 25px;
+    color: rgb(243, 22, 22);
+}
+.rodape h3 {
+    font-size: larger;
+    text-align: right;
+    margin: 15px 15px 10px 0px; 
+}
+.logorodape img{
+    width: 200px;
+    height: auto;
+    margin: 60px 30px;
+    float: right;
+}
+.copy{
+    clear: both;
+    color: white;
+    text-align: right;
+    font-size: smaller;
+    margin: 50px 20px;
+}
+
+/*Pagina lancamentos*/
+
+#lancamentos{
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: auto;
+}
+#titulolancamentos{
+    width: 100%;
+    height: 150px;
+    margin-bottom: -15px;
+}
+#titulolancamentos h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+#ladodireito1{    /*Inicio do banner 1*/
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.sinopsefilme1{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    color: white;
+    z-index: 1;
+    left: 50px;
+}
+.sinopsefilme1 h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10%;
+}
+.sinopsefilme1 p {
+    color: white;
+    padding: 30px;
+    text-indent: 50px;
+}
+.capafilme1 img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 500px;
+    z-index: 0;
+}
+
+
+#ladoesquerdo1{    /*Inicio do banner 2*/
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.sinopsefilme2{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    color: white;
+    z-index: 1;
+    right: 50px;
+}
+.sinopsefilme2 h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10%;
+}
+.sinopsefilme2 p {
+    color: white;
+    padding: 30px;
+    text-indent: 50px;
+}
+.capafilme2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    z-index: 0;
+}
+
+/*Fim do banners */
+
+/*Pagina Login*/
+    .containerlogin{
+        width: 1000px;
+        height: 500px;
+        margin: auto;
+    }
+    .arealogin, .criarconta {
+        margin-top: 50px;
+    }
+    .arealogin {
+        background-color: var(--cor3);
+        float: left;
+        width: 500px;
+        height: 430px;
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+    .arealogin legend {
+        margin-left: 20px;
+        font-size: 2em;
+        color: white;
+    }
+    .arealogin fieldset{
+        border: 1px solid white;
+    }
+    .arealogin span {
+        padding: 10px 15px;
+        display: block;
+        color: white;
+    }
+    .arealogin input[type=button]{
+        color: white;
+        margin-top: 25px;
+        width: 50%;
+        background-color: var(--cor7);
+        border: none;
+    }
+    .arealogin input[type=button]:hover{
+        background-color: rgb(11, 170, 11);
+    }
+    .arealogin a{
+        text-decoration: none;
+    }
+    .arealogin a#esquecesenha{
+        color: white;
+        text-align: right;
+        font-size: smaller;
+        text-decoration: none;
+        float: right;
+        padding: 25px;
+    }
+    .arealogin input{
+        display: block;
+        width: 90%;
+        margin-left: 15px;
+        height: 40px;
+        border: 1px solid white;
+        padding: 8px;
+        outline: 0;
+    }
+    .arealogin input:focus {
+        background-color: rgb(208, 241, 221);
+    }
+    .criarconta {
+        width: 500px;
+        height: 300px;
+        padding: 50px;
+        float: left;
+    }
+    .criarconta h1{
+        font-size: 2em;
+        color: white;
+        font-weight: lighter;
+    }
+
+    .criarconta a input{
+        background-color: red;
+        color: white;
+        width: 180px;
+        height: 40px;
+        margin-left: 125px;
+        margin-top: 50px;
+    }
+    .criarconta a input:hover{
+        background-color: rgb(177, 5, 5);
+    }
+
+
+/*Pagina de cadastro*/
+    section#cadastro {     /*Lado esquerdo*/
+        background-color: var(--cor3);
+        width: 900px;
+        height: 820px;
+        margin: auto;
+        color: white;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .formulariofocus input:focus {    
+        background-color: rgb(208, 241, 221);
+    }
+    #formulario h1{
+        font-size: 2em;
+        text-align: left;
+        font-weight: lighter;
+        padding: 15px;
+    }
+    #preferencia > label {
+        margin-left: 5px;
+    }
+    #dadospessoais{
+        float: left;
+        width: 400px;
+        height: 400px;
+        padding: 15px;
+        border-right: 1px solid rgba(255, 255, 255, 0.219);
+        margin-left: 50px;
+    }
+    #dadospessoais span {
+        padding: 10px 0px 5px 0px;
+        display: block;
+    }
+    input[type=date]{
+        width: 92%;
+    }
+    #dadospessoais input[type=text] {
+        width: 92%;
+        padding: 3px;
+        padding-left: 5px;
+        outline: 0;
+    }
+
+    #dadoscontato {  /*Lado direito*/
+        float: right;
+        width: 400px;
+        height: 400px;
+        margin-right: 50px;
+        padding: 15px;
+    }
+    #dadoscontato span {
+        padding: 10px 0px 5px 0px;
+        display: block;
+    }
+    input[type=date]{
+        width: 92%;
+    }
+    #dadoscontato input[type=tel], #dadoscontato input[type=text]{
+        width: 92%;
+        padding: 3px;
+        padding-left: 5px;
+        outline: 0;
+    }
+    #whatsetelegram{
+        margin-top: 15px;
+        width: 320px;
+        height: auto;
+    }
+    #item1, #item2 {
+        float: left;
+        padding-right: 50px;
+        padding-left: 10px;
+    }
+    .msg{      /*Parte abaixo do cadastro*/
+        clear: both;
+        margin-left: 65px;
+        margin-right: 50px;
+    }
+    .msg div textarea{
+        margin-top: 10px;
+        width: 94%;
+        height: 200px;
+        outline: 0;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .msg div textarea:focus{
+        background-color: rgb(208, 241, 221);
+    }
+    .botaoenviarcadastro input{
+        margin-left: 65px;
+        width: 150px;
+        height: 40px;
+        color: white;
+    }
+    #botaoenviar{
+        background-color: rgb(11, 170, 11);
+    }
+    #botaoenviar:hover{
+        background-color: rgb(6, 141, 6);
+    }
+    #botaolimpar{
+        background-color: red
+    }
+    #botaolimpar:hover{
+        background-color: rgb(177, 5, 5)
+    }
+
+
+/*Pagina de Planos*/
+    #planosbanner{
+        position: relative;
+        width: 100%;
+        background-image: linear-gradient(red,black
+        );
+        margin-top: 50px;
+        display: block;
+        height: 500px;
+    }
+    .tvplano img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 400px;
+        background-position: contain;
+        z-index: 1;
+    }
+    .apresentacaoplano{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        width: calc(100% - 700px);
+        margin: 20px auto;
+        height: 400;
+        right: 50px;
+        top: 50px;
+        padding: 15px 25px 0px 5px;
+        z-index: 2;
+    }
+    .apresentacaoplano h1{
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .apresentacaoplano p{
+        text-align: justify;
+    }
+    .planos{
+        clear: both;
+        display: block;
+        width: 900px;
+        height: 500px;
+        margin: 25px auto;
+    }
+    .planos h3{
+        margin-top: 10px;
+        text-align: center;
+        padding: 15px;
+        text-transform: uppercase;
+        font-size: x-large;
+        font-weight: 900;
+    }
+    .planos h1 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .planos p {
+        text-align: center;
+        padding: 20px;
+    }
+    .planolink, .planolink:visited, .planolink:link {
+        text-decoration: none;
+        color: black;
+    }
+    .plano1, .plano2, .plano3{
+        float: left;
+        margin: 25px;
+        width: 250px;
+        height: 420px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 3px rgb(10, 255, 1);
+    }
+    .plano1{
+        background-image: linear-gradient(white,rgb(202, 202, 202));
+    }
+    .plano2{
+        background-image: linear-gradient(rgb(255, 227, 71),rgb(240, 240, 150));
+    }
+    .plano3{
+        background-image: linear-gradient(rgb(255, 0, 106),rgb(37, 4, 121));
+        color: white;
+    }
+
+    .textboxplanos{
+        width: 1000px;
+        height: auto;
+        margin: auto;
+    }
+    .textboxplanos p{
+        margin: 50px auto;
+        width: 950px;
+        color: white;
+        text-align: justify;
+        padding: 15px;
+    }
+
+
+    /*Inicio da tabela*/
+    #table{
+        width: 72vw;
+        height: 620px;
+        margin: 50px auto;
+        background-color: var(--cor3);
+        color: white;
+    }
+    .areatabela table{
+        width: 80%;
+        height: 500px;
+        margin: 20px auto;
+        border: none;
+        border-collapse: collapse;
+    }
+    .areatabela h1 {
+        font-size: 1.8em;
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .areatabela th {
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+    .areatabela tr {
+        color: #000000;
+        border-bottom: 1px solid white;
+    }
+    .areatabela td {
+        text-align: center;
+    }
+    col#Beneficios, col#Standard{
+        background-image: linear-gradient(rgb(238, 238, 238),lightgray);
+    }
+    col#Gold{
+        background-image: linear-gradient(rgb(255, 239, 146),lightgray);
+    }
+    col#Diamante{
+        background-image: linear-gradient(rgb(231, 102, 156),rgb(120, 95, 182));
+    }
+
+
+    /*Pagina do catalogo*/
+
+    .catalogo{
+        width: 100%;
+        height: auto;
+        
+        margin: 50px auto;
+    }
+    .titulocatalogo{
+        width: 100%;
+        height: 180px;
+        margin-top: -35px;
+        background-image: linear-gradient(var(--corcatalogo), var(--cor1));
+    }
+    .titulocatalogo h1{
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 45px 0px 15px 0px;
+    }
+    .destaque{
+        font-size: 1.5em;
+        color:red;
+    }
+    .imgcatalogo{
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-color: var(--corcatalogo);
+    }
+    .imgcatalogo img{
+        display: block;
+        width: 1200px;
+        margin: auto;
+        background-position: cnter;
+    }
+    hr{
+        margin: auto;
+        width: 1200px;
+        border: 1px solid red;
+    }

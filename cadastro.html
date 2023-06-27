@@ -1,0 +1,178 @@
+<!--Uma das páginas deverá conter um formulário de cadastro com os seguintes elementos:
+                • input type="text"   X
+                • input type="password"  X
+                • input type="radio"   X
+                • input type="email"
+                • input type="checkbox"
+                • input type="date"
+                • input type="number"
+                • input type="reset"
+                • input type="submit"
+                • select
+                • textarea
+                • fildset
+                • legend        
+                    O layout do formulário deverá ser organizado através de elementos flutuante para
+                    alinhamento dos elementos.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoremIpsum | Cadastro</title>
+    <meta name="description" content="Serviço de stream Lorem Ipsulum">
+    <meta name="keywords" content="Stream, filmes, series, documentarios">
+    <meta name="author" content="Niaggy da Silva Novoa">
+    <link rel="shortcut icon" href="icon/favicon.png" type="image/png">
+    <link rel="stylesheet" href="cadastro.html">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="planos">
+    <link rel="stylesheet" href="catalogo.html">
+    <link rel="stylesheet" href="lancamentos.html">
+    <link rel="stylesheet" href="style/style.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">   <!--Área da logo-->
+            <a href="index.html"><img src="imagens/logohorizontal.png" alt="Home"></a>
+        </div>
+        <div id="navbar">
+            <nav id="botoes"> <!--Barra de navegação-->
+
+                <a href="index.html">Home</a>
+                <a href="lancamentos.html">Lançamentos</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="planos.html">Planos</a>
+            </nav>
+        </div>
+        <div id="search">
+            <input type="search" placeholder="Procurar...">
+        </div>
+        <div id="login">
+            <a href="login.html"><input type="button" value="Entrar"></a>
+        </div>
+    </header>
+    <main>
+        <section id="cadastro" class="formulariofocus">
+            <div id="formulario">
+                <h1>Cadastro novo usuário</h1>
+                <form action="#" method="post" autocomplete="on"> 
+                    <div id="dadospessoais">
+                            <div>
+                                <span><label for="inome">Nome: </label></span>
+                                <input type="text" name="nome" id="inome" placeholder="Primeiro Nome" required autocomplete="nickname" maxlength="30">
+                            </div>
+                            
+                            <div>
+                                <span><label for="isobrenome">Sobrenome: </label></span>
+                                <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" required autocomplete="on">
+                            </div>
+                            
+                            <div>
+                                <span id="datanasc"><label for="inasc">Data de Nascimento: </label></span>
+                                <input type="date" name="nasc" id="inasc" required value="2023-06-10">
+                            </div>
+                            <div>
+                                <span><label for="iCPF">CPF: </label></span>
+                                <input type="text" name="CPF" id="iCPF" required maxlength="11" minlength="11" autocomplete="on"  pattern="^[0-9]{3}.[0-9]{3}[0-9]{3}-[0-9]{2}$" placeholder="000.000.000-00"> <!--Para orientar na digitação-->
+                            </div>
+                            <div>
+                                <span><label for="numfamilia">Quantas pessoais convivem com você? </label></span>
+                                <select name="familia"  id="numfamilia">
+                                    <option value="0">Nenhuma</option>
+                                    <option value="Uma pessoa">Uma pessoa</option>
+                                    <option value="Duas pessoas">Duas pessoas</option>
+                                    <option value="Três pessoas">Três pessoas</option>
+                                    <option value="Quatro pessoas">Quatro pessoas</option>
+                                    <option value="Mais de 4">Mais de 4</option>
+                                </select>
+                            </div>
+                            <div id="preferencia">
+                                <span>Preferência de Contéudo:</span>
+                                <label for="filmes">Filmes</label>
+                                <input type="radio" name="filmes" id="filmes" value="">
+
+                                <label for="series">Series</label>
+                                <input type="radio" name="series" id="series">
+
+                                <label for="animes">Animes</label>
+                                <input type="radio" name="animes" id="animes" value="">
+
+                                <label for="documentario">Documentários</label>
+                                <input type="radio" name="documentario" id="documentario">
+                            </div>
+        
+                    </div>                 
+                            
+                        <div id="dadoscontato">
+                            <div>
+                                <span><label for="Endereço">Endereço </label></span>
+                                <input type="text" name="Endereço" id="Endereço" required autocomplete="on" placeholder="Digite seu endereço...">
+                            </div>
+                            <div>
+                                <span><label for="itel">Telefone: </label></span>
+                                <input type="tel" name="tel" id="itel" placeholder="(00) 0000-0000" autocomplete="tel-area-code">
+                            </div>
+                            <div>
+                                <span><label for="icel">Celular: </label></span>
+                                <input type="tel" name="cel" id="icel" required autocomplete="tel" placeholder="(00) 0000-0000" > <!--Configurar entrada de valor-->
+                            </div>
+                            <div id="whatsetelegram">
+                                <div id="item1">
+                                    <label for="iwhat">Whatsapp</label>
+                                    <input type="checkbox" name="whatsapp" id="iwhat">
+                                </div>
+                                <div id="item2">
+                                    <label for="itelegram">Telegram</label>
+                                    <input type="checkbox" name="telegram" id="itelegram">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg">
+                                <span>Fale mais sobre suas preferências de contéudo: </span>
+                                <div><textarea name="" id="" cols="40" rows="10"></textarea></div>
+                            </p><br>
+                        </div>
+                    <div class="botaoenviarcadastro">
+                        <input type="submit" id="botaoenviar" value="Enviar">
+                        <input type="reset" name="" id="botaolimpar" value="Limpar">
+                   
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer> <!--rodape-->
+        <div id="secaorodape">
+            <div class="rodape">
+                <h3>Informações</h3>
+                <ul>
+                    <li>Conta</li>
+                    <li>Suporte</li>
+                    <li>Termos de Uso</li>
+                </ul>
+            </div>
+            <div class="rodape">
+                <h3>Perguntas Frequentes</h3>
+                <ul>
+                    <li>Privacidade</li>
+                    <li>Dúvidas</li>
+                    <li>Avaliação</li>
+                </ul>
+            </div>
+            <div class="rodape">
+                <h3>Aplicativo</h3>
+                <ul>
+                    <li>Baixe Aqui!</li>
+                </ul>
+            </div>
+            <div class="logorodape">
+                <div><img src="imagens/logohorizontal.png" alt=""></div>
+            </div>
+            <div class="copy">
+                <p>&#169 2023  |  Desenvolvido por Niaggy Silva Novoa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
